@@ -20,7 +20,7 @@ server = Flask(__name__)
 def start(message):
     bot.reply_to(message, 'Hello, ' + message.from_user.first_name)
     bot.send_message(message.from_user.id,
-                     u'您好，我是旅行助手BOT\n功能解說\n/search 可以搜尋附近的旅遊景點~\n@GoGotest 可以啟用助手的搜尋功能，可以在任何對話框搜尋景點，並分享給好友\n/help 查看BOT使用指南')
+                     u'您好，我是旅行助手BOT\n功能解說\n/search 可以搜尋附近的旅遊景點~\n@GoGoTest_Bot 可以啟用助手的搜尋功能，可以在任何對話框搜尋景點，並分享給好友\n/help 查看BOT使用指南')
 
 # search scenes command
 
@@ -40,7 +40,7 @@ def deal_message(message):
 @bot.message_handler(commands=['help'])
 def deal_help(message):
     bot.send_message(message.from_user.id,
-                     u'/search 可以搜尋附近的旅遊景點~\n@GoGotest 可以啟用助手的搜尋功能，可以在任何對話框搜尋景點，並分享給好友')
+                     u'/search 可以搜尋附近的旅遊景點~\n@GoGoTest_Bot 可以啟用助手的搜尋功能，可以在任何對話框搜尋景點，並分享給好友')
 
 # deal with text, bot will search the target location
 
