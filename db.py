@@ -33,7 +33,7 @@ def search_scene(sender_id, px, py, count2, mode, tag):
     client = pymongo.MongoClient(uri)
     db = client.get_default_database()
     scenes = db['travel']
-    if(tag == 25):
+    if(tag == 30):
         bot.send_message(message.from_user.id,
                      u'不好意思 目前只支援縣市搜尋')
 
