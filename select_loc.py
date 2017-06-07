@@ -1,6 +1,5 @@
 # coding=utf-8
 from db import search_scene
-
 # deal with location, every location have uniqle tag
 
 
@@ -56,4 +55,6 @@ def select_loc(message, userid, mode):
         answer = search_scene(userid, 0, 0, 0, mode, 23)
     elif u'墾丁' in message:
         answer = search_scene(userid, 0, 0, 0, mode, 24)
+    else:
+        answer = search_scene(userid, 0, 0, 0, mode, 30)
     return answer
